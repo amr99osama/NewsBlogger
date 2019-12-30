@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body
+{
+    font-size: 62.5%;
+    font-family:cursive;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    background: 0 0!important;
+    z-index: 3;
+    padding: 2rem 4rem;
+    transition: all 0.2s ease-in;
+    border-bottom: 1px solid #1E6C9F;
+    height: auto;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+.nav-link
+{
+    font-size: 1.7rem;
+ position: relative;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0 2rem;
+    transition: all 0.2s ease-out;
+    font-weight: 700;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+.nav-link::after
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #1E6C9F;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.nav-link:hover::after
+{
+        transform: translateY(0);
+        opacity: 1;
+
+
+}
+
+.alert
+{
+    font-size: 1.6rem;
+}
+
+
+.control-panel
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.nav-link:hover , .nav-active
+{
+    color:#1E6C9F !important ;
+}
+.nav-active
+{
+    font-weight: 600;
+}
+.nav-link:hover::before
+{
+color: #1E6C9F;
+    text-shadow: 10px 0 #1E6C9F, -10px 0 #1E6C9F;
+}
+
+
+.active
+{
+    color: #1E6C9F !important;
+    transition: all 0.2s ease-in;
+}
+
+/* typo */
+
+.header-1
+{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1E6C9F;
+    position: relative;
+}
+
+.header-4
+{
+    font-size: 2rem;
+    color: #1E6C9F;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.table
+{
+    font-size: 1.6rem;
+}
+
+
+thead
+{
+        background-color: #1E6C9F;
+    color: white;
+}
+a,.btn
+{
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+.btn-reg
+{
+    background-color: #1E6C9F;
+    color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.btn-reg:hover
+{
+    color: #1E6C9F;
+    background-color: white;
+    border: 1px solid #1E6C9F;
+        text-decoration: none;
+    
+}
+
+
+.fa-eye
+{
+    margin-right:  5px;
+    text-align: center;
+}
+
+.border    
+{
+   position: absolute;
+    content: '';
+    height: 2px;
+    /* border: 1px solid #ccc; */
+    width: 150px;
+    background-color: #ccc;
+}
+
+.card
+{
+    font-size: 1.6rem;
+}
+
+
+.header-2 {
+    font-size: 3rem;
+    color: black;
+    margin: 2rem 0;
+}
+
+.card-dash .header-2
+{
+    color: white;
+    
+}
+/* Footer */
+.crights
+{
+    font-size: 1.6rem;
+}
+
+.card-header
+{
+    background-color: #1E6C9F;
+    color: white;
+}
+
+.navbar-brand
+{
+    color: #1E6C9F !important;
+    letter-spacing: 2px;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.card-img-top
+{
+    height: 400px !important;
+}
+
+label
+{
+    font-weight: 700;
+}
+
+.form-control:not(textarea),
+.custom-file-label,.custom-file-input
+{
+width: 30% ;
+    margin: 10px 0;
+    /* padding: 10px 20px; */
+    font-size: 1.6rem;
+}
+
+.header-5
+{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.ad-section img
+{
+    padding: 10px;
+    margin-bottom: 3rem;
+}
+
+.card-category .card-header
+{
+    background-color: white;
+    padding: 2rem;
+    color: #1E6C9F;
+}
+.card-category .card-header h4
+{
+    font-weight: 700;
+    font-size: 2.5rem
+}
+
+.list-group-item
+{
+    font-size: 2rem;
+    color: #1E6C9F;
+}
+
+.preloader {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+overflow-y: hidden;
+}
+  .preloader .inner-preloader 
+{
+    z-index: 9999; 
+}
+
+
+
+textarea,.-x
+{
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.card-dash
+{
+    background-color: #1E6C9F;
+    padding: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+textarea.form-control
+{
+    font-size: 1.6rem;
+}
+
+
+input[type="search"]
+{
+    width: auto;
+    display: flex
+}
+
+.card-login .form-control:focus
+    
+{
+    border-color: #1E6C9F;
+    outline: 0;
+    box-shadow: none !important;
+    transition: all 0.2s ease-in;
+}
+
+
+.card-dash:hover
+{
+    background-color: white;
+    color: #1E6C9F;
+    border: 1px solid #1E6C9F
+}
+
+.card-dash:hover .card-body h4 ,
+.card-dash:hover .card-body .header-2 
+
+{
+    color: #1E6C9F;
+}
+
+
+/* login page */
+.card-login .form-control
+{
+    width: 100%;
+    margin: 0px 0 !important;
+}
+
+.header1
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-wrapper
+{
+    padding: 25px;
+    text-align: center;
+    border: 2px solid;
+    margin: 10px;
+}
+
+.about-wrapper img
+{
+    border: 2px solid #1E6C9F;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.about-wrapper .header-6
+{
+        font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.about-wrapper .text 
+{
+    font-size: 15px;
+    color: #646464;
+}
+
+.banner
+{
+    background-image: url(../assets/story-2.jpeg);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.overlay
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+   display: flex;
+}
+
+.banner-2
+{
+      background-image: url(../assets/news.jpg);
+    height: 500px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.overlay-2
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+   display: flex;
+}
+.overlay .d-flex  ,.overlay-2 .d-flex
+{
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.overlay .header-2 , .overlay-2 .header-2
+{
+    font-size: 5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.overlay .text, .overlay-2 .text
+{
+    color: white;
+    font-size: 1.7rem;
+    width: 70%;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 767px)
+{
+    html,body
+    {
+        font-size: 37.5%;
+    }
+    
+    .card-header
+    {
+        font-size: 2rem;
+    }
+    .form-control {
+    width: 100%;
+}
+    .button-actions
+    {
+        flex-direction: column;
+    }
+    .btn
+    {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
